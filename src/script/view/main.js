@@ -1,3 +1,5 @@
+import DataSource from '../data/data-source.js' ;
+
 const main = () => {
   // Select Element 
   const searchVal = document.querySelector('#searchElement');
@@ -58,5 +60,7 @@ const main = () => {
 
 
 };
+
+export default main;
 
 

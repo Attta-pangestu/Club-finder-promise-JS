@@ -1,0 +1,19 @@
+{
+  "name": "dicoding-club-finder",
+  "version": "1.0.0",
+  "description": "Dicoding Task Assignment about ES6",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Attta-pangestu/Club-finder-promise-JS.git"
+  },
+  "author": "atha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Attta-pangestu/Club-finder-promise-JS/issues"
+  },
+  "homepage": "https://github.com/Attta-pangestu/Club-finder-promise-JS#readme"
+}

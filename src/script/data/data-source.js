@@ -1,3 +1,6 @@
+// Mengambil data clubs
+import clubs from './clubs.js' ; 
+
 // Menjalankan fungsi mengambil data dari source club
 class DataSource {
   // Method yang diakses langsung tanpa pembuatan instance
@@ -19,3 +22,5 @@ class DataSource {
   }
   
 }
+
+export default DataSource ; 
