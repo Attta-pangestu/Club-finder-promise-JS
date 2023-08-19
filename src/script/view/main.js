@@ -27,6 +27,9 @@ const main = () => {
   const searchInstance = document.querySelector('search-bar');
   searchInstance.clickEvent = onButtonClicked;
 
+  // Instanciation Club List 
+  let clubListEl = document.createElement('club-list') ; 
+
 
   // ========================== Ini fungsi asynchronous sebagai event handler ===========================
   // Kumpulan fungsi yang saling berkaitan dan menunggu 
@@ -45,13 +48,9 @@ const main = () => {
   // Merender perubahan jika sukses 
   function renderClub(clubs) {
     //  ======================================== Cara Web Component =============================================
-    // Instanciation Club List 
-    let clubListEl = document.createElement('club-list') ; 
+  
     // Memasukkan parameter data ke properti club list object
     clubListEl.clubs = clubs ; 
-    // Append ke DOM main
-    document.querySelector('main').append(clubListEl);
-
     /*  ======================================== Cara Render Konvensional =============================================
     // clubs.forEach(club => {
     //   let clubEl = document.createElement('div');
@@ -75,13 +74,12 @@ const main = () => {
   
   // Merender ketika data tidak ditemukan 
   function renderFail(pesan) {
-   // Instanciation Club List 
-    let clubListEl = document.createElement('club-list') ; 
     clubListEl.renderError(pesan) ; 
-    // Append ke DOM main
-    document.querySelector('main').append(clubListEl);
+    
   }
 
+  // Append ke DOM main
+   document.querySelector('main').append(clubListEl);
 
 
 };
