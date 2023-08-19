@@ -1,5 +1,7 @@
 class ClubItem extends HTMLElement {
 
+  
+
   set props(props) {
     this._props = props;
     this.render();
