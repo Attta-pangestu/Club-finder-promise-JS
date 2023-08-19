@@ -4,7 +4,7 @@
   padding: 16px;
 }
 
-#clubList > .placeholder {
+club-list > .placeholder {
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.5);
   -webkit-user-select: none;
