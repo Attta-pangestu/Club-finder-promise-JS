@@ -4,7 +4,8 @@
   "description": "Dicoding Task Assignment about ES6",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+     "build" : "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/Attta-pangestu/Club-finder-promise-JS/issues"
   },
-  "homepage": "https://github.com/Attta-pangestu/Club-finder-promise-JS#readme"
+  "homepage": "https://github.com/Attta-pangestu/Club-finder-promise-JS#readme",
+  "dependencies": {
+    "webpack": "^5.88.2", 
+     "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  }
 }
