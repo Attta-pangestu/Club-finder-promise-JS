@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+const path = require('path') ; 
+
+
+module.exports = {
+    entry : './app.js', 
+    output : {
+        path : path.resolve(__dirname, 'dist'), 
+        filename : 'bundle.js'
+    }, 
+    mode: 'production',
+=======
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -47,4 +59,5 @@ module.exports = {
     ],
   }
 
+>>>>>>> a679fe3f81c7e1ef6ff3773107989c7bbf077664
 };

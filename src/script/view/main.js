@@ -1,5 +1,9 @@
-// Data 
+// Teknik pencarian data yang sudah tersedia sbg object
 import DataSource from '../data/data-source.js';
+
+//Teknik pencarian data dengan metode fetch API  
+import FetchClub from '../data/fetchClub.js' ; 
+
 // Komponen
 import '../components/searchBar.js';
 import '../components/clubItem.js';
@@ -16,7 +20,6 @@ const main = () => {
     onButtonClicked();
     console.log('Sedang mengambil data');
    });
-
    */
 
   // =============================== Ini cara event handler dengan web component ===========================
@@ -35,11 +38,19 @@ const main = () => {
   // Kumpulan fungsi yang saling berkaitan dan menunggu 
   async function onButtonClicked() {
     try {
-      let keyword = searchInstance.value;
-      let dataClub = await DataSource.searchClub(keyword);
+      let keyword = searchInstance.value.toLowerCase();
+      /* pencarian dari objek array yang sudah tersedia
+       let dataClub = await DataSource.searchClub(keyword);
+      */
+
+      // Pencarian dengan fetch ke publik API
+      const fetchClub = new FetchClub(keyword) ; 
+      let dataClub = await fetchClub.getDataClub() ; 
+      console.log(dataClub) ; 
       renderClub(dataClub);
     } catch (pesan) {
-      renderFail(pesan);
+      // renderFail(pesan);
+      console.log(pesan) ; 
     }
   }
 
@@ -48,9 +59,9 @@ const main = () => {
   // Merender perubahan jika sukses 
   function renderClub(clubs) {
     //  ======================================== Cara Web Component =============================================
-  
     // Memasukkan parameter data ke properti club list object
     clubListEl.clubs = clubs ; 
+
     /*  ======================================== Cara Render Konvensional =============================================
     // clubs.forEach(club => {
     //   let clubEl = document.createElement('div');

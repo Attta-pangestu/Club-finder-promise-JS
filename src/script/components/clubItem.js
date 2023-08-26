@@ -1,20 +1,18 @@
 class ClubItem extends HTMLElement {
 
-  
-
   set props(props) {
     this._props = props;
     this.render();
   }
 
   render() {
-    const { name, stadion, fanArt, description } = this._props;
+    const { idTeam, strDescriptionEN, strTeam, strTeamBadge} = this._props;
     this.innerHTML = `
       <div class="club">
-        <img class="fan-art-club" src="${fanArt}" alt="Fan Art" /> 
+        <img class="fan-art-club" src="${strTeamBadge}" alt="Fan Art" /> 
         <div class="club-info" >
-        <h2> ${name} </h2>
-        <p> ${description} </P> 
+        <h2> ${strTeam} </h2>
+        <p> ${strDescriptionEN} </P> 
         </div>
       </div>
     ` ;

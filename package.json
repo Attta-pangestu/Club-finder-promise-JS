@@ -4,8 +4,27 @@
   "description": "Dicoding Task Assignment about ES6",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ",
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "start-prod": "webpack  --config webpack.prod.js "
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+=======
     "test": "echo \"Error: no test specified\" && exit 1", 
      "build" : "webpack"
+>>>>>>> a679fe3f81c7e1ef6ff3773107989c7bbf077664
   },
   "repository": {
     "type": "git",
@@ -18,6 +37,9 @@
   },
   "homepage": "https://github.com/Attta-pangestu/Club-finder-promise-JS#readme",
   "dependencies": {
+<<<<<<< HEAD
+    "regenerator-runtime": "^0.14.0"
+=======
     "webpack": "^5.88.2", 
      "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
@@ -29,5 +51,6 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
+>>>>>>> a679fe3f81c7e1ef6ff3773107989c7bbf077664
   }
 }
